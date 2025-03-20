@@ -1,0 +1,16 @@
+body{
+    background-color: rgb(224, 169, 102);
+}
+#container-1{
+    background: rgb(101, 253, 134);   
+    margin: 0;
+}
+.checkbox{
+    background-color: plum;
+}
+.select{
+    background-color: rgb(5, 158, 230);
+}
+.area{
+    background-color: rgb(199, 164, 231);
+}

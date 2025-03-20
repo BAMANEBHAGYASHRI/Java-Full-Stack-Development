@@ -1,0 +1,23 @@
+.container{
+    border: 1px solid black;
+    width: 400px;
+    height: 100%;
+    padding: 20px;
+    margin: auto ;
+    background-color: rgb(245, 223, 124);
+}
+h1, p{
+   text-align: center;  
+}
+.abc{
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    padding: 10px;
+    
+}
+body{
+    background-image: url(../IMAGES/img-5.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
