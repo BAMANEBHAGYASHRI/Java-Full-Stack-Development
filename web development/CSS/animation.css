@@ -1,0 +1,63 @@
+h1{
+    text-align: center;
+    
+}
+body{
+    background-image: url(../IMAGES/img-7.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+div{
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    position: relative;
+    
+    animation-name: demo;
+    animation-duration: 6s;
+    animation-delay: 2s;
+    /* animation-iteration-count: 3s; */
+    /* animation-timing-function:ease; */
+    animation-iteration-count: infinite;
+    animation-direction: alternate-reverse;
+   
+    
+}
+#id-1{
+    background-color: yellow;
+    animation-timing-function: ease;
+    top: 10px;
+}
+#id-2{
+    background-color: rgb(192, 108, 69);   
+    animation-timing-function: ease;
+    top: 60px; 
+}
+#id-3{
+    background-color: rgb(221, 183, 102);
+    animation-timing-function: ease;
+    top: 110px;
+    
+}
+#id-4{
+    background-color: rgb(143, 143, 139);
+    animation-timing-function: ease;
+    top: 160px;
+    
+}
+#id-5{
+    background-color: rgb(248, 162, 229);
+    animation-timing-function: ease;
+    top: 210px;
+    
+}
+
+ @keyframes demo {
+   0%{
+    left: 0;
+   }
+   100%{
+    left: 100%;
+   }
+ }
