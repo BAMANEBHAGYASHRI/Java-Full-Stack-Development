@@ -1,0 +1,32 @@
+body{
+    background-color: aqua;
+    color: blueviolet;
+    text-decoration: underline;
+    text-align: center;
+}
+
+@media screen and (max-width:1100px) {
+    body{
+        background-color: darkgoldenrod;
+        color: black;
+    }
+}
+
+@media screen and (max-width:800px) {
+    body{
+        background-color: rgb(28, 223, 70);
+        color: rgb(230, 79, 79);
+    }
+}
+@media screen and (max-width:600px) {
+    body{
+        background-color: rgb(77, 61, 148);
+        color: rgb(166, 231, 150);
+    }
+}
+@media screen and (max-width:430px) {
+    body{
+        background-color: rgb(243, 139, 174);
+        color: rgb(233, 135, 23);
+    }
+}
