@@ -1,4 +1,4 @@
-class pattern9 {
+.,class pattern9 {
     public static void main(String x[]) {
         int n=5;
         for (int i = n; i>=1; i--) {

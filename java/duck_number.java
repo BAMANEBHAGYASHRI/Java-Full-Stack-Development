@@ -14,10 +14,10 @@ while(num != 0){
 	
 }
 if(c>0){
-	System.out.println("Not Duck ");
+	System.out.println("Duck number ");
 }
 else{
-	System.out.println("Duck  number");
+	System.out.println("Not Duck  number");
 }
 }
 

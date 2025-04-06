@@ -21,8 +21,9 @@ public class Delete_Array {
 		}
 
 		size--;
+		
 		for(int i=0; i<size;i++) {
-			System.out.print(a[i] + " " );
+			System.out.print("delete the item "+a[i] + " " );
 		}
 	}
 

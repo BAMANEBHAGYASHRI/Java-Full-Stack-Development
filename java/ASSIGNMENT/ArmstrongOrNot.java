@@ -5,7 +5,6 @@ class ArmstrongOrNot{
 	System.out.println("Enter Your Number");
 	int num = sc.nextInt();
 	int rem,arm=0;
-	
 	int c=num;
 	while(num>0){
 		rem=num%10;

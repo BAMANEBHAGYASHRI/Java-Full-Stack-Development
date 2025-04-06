@@ -30,7 +30,7 @@ public class stringInBuiltFunction {
 		 System.out.println("Concatination----"+ con);
 		 
 		 //Trim()method
-		 System.out.println(s1.trim());
+		 System.out.println("trimh -------" +s1.trim());
 		 
 		 
 		 //SubString()
@@ -45,6 +45,6 @@ public class stringInBuiltFunction {
 		 System.out.println(s1.endsWith("one"));
 		
 
-		
+	}	
 		
 }

@@ -10,7 +10,7 @@ public class Assignment_InsertingValue_Array {
 		for(int i=0; i<a.length; i++) {
 			a[i]=sc.nextInt();
 		}
-		
+			
 		System.out.println("Enter item values");
 		int index=sc.nextInt();
 		System.out.println("Enter index value");
