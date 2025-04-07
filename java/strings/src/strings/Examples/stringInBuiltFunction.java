@@ -40,10 +40,12 @@ public class stringInBuiltFunction {
 //		 System.out.println(s1.substring(12));
 
 		 
-		 
 		 //endsWith()method
-		 System.out.println(s1.endsWith("one"));
-		
+		 System.out.println(s1.endsWith("one")); 
+		 
+		 
+		 //CompareTo() FUnction
+		 System.out.println( "comparing ---" + s3.compareTo(s4));		
 
 	}	
 		
