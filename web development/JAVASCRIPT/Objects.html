@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        let obj={
+            name:'bhagyashri',
+            age:21,
+            city:"Sangli"
+        }
+        console.log(obj);   //object defined
+
+        // Methods-object.keys
+            let obj1=Object.keys(obj);
+            console.log(obj1);
+
+        //method-object.values
+        let obj2=Object.values(obj);
+        console.log(obj2);
+
+        //method-object.assign
+        let obj3=Object.assign(obj);
+        obj3.name='shruti';
+        obj3.age=22;
+        console.log(obj3);
+
+        // Assign key:pair
+        obj3.company='technolearn';
+        console.log(obj3);
+
+         //method-object.freeze()
+         let obj4=Object.freeze(obj);
+
+         obj4.name='pooja';
+         console.log(obj4);
+
+          //method-object.seal()
+          let obj5=Object.seal(obj);
+          obj5.name='pooja';
+          obj5.class="btech";
+          console.log(obj5);
+
+
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function demo(){
+            console.log("Heyyyy!!!");
+        }
+        demo();  //function statement . definition,declaration
+
+        // Function Expression
+        function data(a ,b){
+            console.log(a+b);
+        }
+        data(2,5);
+        // or
+        function data1(){
+            let x=3;
+            let y=6;
+            console.log(x+y);
+        }
+        data1();
+
+
+        // IIFE -Anunomous Function
+        (function(){
+            let a=4;
+            let b=7;
+            console.log(a+b);
+        })();     //Function Expresion
+
+
+
+
+        // Arrow Function
+        let hello=()=>{
+            return 'heyyyyyyyyyy'
+        }
+        console.log(hello());
+        // or
+        let hello1=(p,q)=>{
+            return p+q
+        }
+        console.log(hello1(2,3));
+
+        //  or
+
+        let hello2=(c,d)=>c+d;
+        console.log(hello2(7,5));
+
+
+        
+    </script>
+</body>
+</html>
