@@ -1,0 +1,26 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+h1{
+    font-size: 100px;
+    text-align: center;
+    margin: 10px;
+    color: blueviolet;
+}
+.image img{
+    width: 400px;
+    height: 500px;
+    float: right;
+    margin-right: 140px;
+    padding: 30px;
+}
+p{
+    /* border: 1px solid black; */
+    margin: 30px;
+    padding: 70px;
+    line-height: 20px;
+    word-spacing: 10px;
+}
+
