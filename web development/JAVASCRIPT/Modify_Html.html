@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM-documet object model</h1>
+    <div id="id1">
+        <h2>DOM html      methods</h2>
+        <p>
+            this is javascript
+
+            <span>DOM</span>
+
+            session
+        </p>
+        <a href="">hello</a>
+
+        <button>      click</button>
+    </div>
+
+    <script>
+        // innerHtml - text , tag , space
+        let element =document.getElementById('id1').innerHTML;
+        console.log(element);
+
+        // innerText-text
+        let element1 =document.getElementById('id1').innerText;
+        console.log(element1);
+
+        // textContent-text , space
+        let element2 =document.getElementById('id1').textContent;
+        console.log(element2);
+    </script>
+</body>
+</html>

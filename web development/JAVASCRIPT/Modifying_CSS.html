@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>DOM-modifying css methods</h1>
+    <p class="hello">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus mollitia in eligendi pariatur tempora voluptate dignissimos eos. Cumque, odio recusandae! Accusantium enim earum fugit ullam nobis magnam at hic laboriosam?</p>
+    <p class="hello">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus mollitia in eligendi pariatur tempora voluptate dignissimos eos. Cumque, odio recusandae! Accusantium enim earum fugit ullam nobis magnam at hic laboriosam?</p>
+    <p class="hello">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus mollitia in eligendi pariatur tempora voluptate dignissimos eos. Cumque, odio recusandae! Accusantium enim earum fugit ullam nobis magnam at hic laboriosam?</p>
+    <p class="hello">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus mollitia in eligendi pariatur tempora voluptate dignissimos eos. Cumque, odio recusandae! Accusantium enim earum fugit ullam nobis magnam at hic laboriosam?</p>
+    <p class="hello">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Delectus mollitia in eligendi pariatur tempora voluptate dignissimos eos. Cumque, odio recusandae! Accusantium enim earum fugit ullam nobis magnam at hic laboriosam?</p>
+
+
+    <script>
+        let demo=document.getElementsByClassName('hello');
+        demo[3].style.backgroundColor='red';
+        demo[1].style.backgroundColor='green';
+        demo[0].style.margin='50px';
+
+
+        demo[2].style.cssText="background-color:yellow";
+       
+    </script>
+</body>
+</html>
