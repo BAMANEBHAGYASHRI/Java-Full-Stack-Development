@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1{
+            text-align: center;
+            color: blueviolet;
+        }
+        #id1{
+            border: 1px solid black;
+            width: 150px;
+            height: 150px;
+            background-color: tomato;
+        }
+    </style>
+</head>
+<body>
+    <h1>Set Interval</h1>
+    <div id="id1"></div>
+
+    <script>
+        let a=10;
+        let demo=setInterval(hello ,   100);
+        function hello(){
+            a=a+10;
+            if(a==400){
+                clearInterval(demo);
+            }
+            else
+            {
+                let x= document.getElementById('id1');
+                x.style.marginLeft=a + 'px';
+            }
+        
+        }
+    </script>
+</body>
+</html>
