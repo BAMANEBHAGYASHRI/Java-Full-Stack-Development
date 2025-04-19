@@ -2,7 +2,7 @@ package oops.org.example;
 class calculation{
 //	calculation(){
 //		this(2,4);
-//		System.out.println("This is dfault constructor");
+//		System.out.println("This is default constructor");
 //	}
 	calculation(int a , int b){
 		this(3.2f , 6.2f);

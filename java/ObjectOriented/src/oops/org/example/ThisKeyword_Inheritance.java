@@ -15,7 +15,7 @@ class cal{
 public class ThisKeyword_Inheritance {
 
 	public static void main(String[] args) {
-		cal c=new cal();
+		new cal();
 
 	}
 
