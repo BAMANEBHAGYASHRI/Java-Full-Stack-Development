@@ -9,7 +9,7 @@ class cars extends  $vehicless{
 		System.out.println("car is driving..");
 	}
 }
-class bike extends $vehicless{
+class bike extends cars{
 	void ride() {
 		System.out.println("bike is riding..");
 	}
