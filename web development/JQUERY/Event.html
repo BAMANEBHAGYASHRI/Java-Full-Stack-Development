@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        h1{
+            text-align: center;
+            color: burlywood;
+        }
+        #id1{
+            height: 300px;
+            width: 250px;
+            border: 2px solid black;
+            background-color: blueviolet;
+            padding: 30px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+<body>
+    <h1>Event</h1>
+    <div id="id1">
+        <h2>jquery Events</h2>
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi ea debitis dolores quis temporibus veritatis tempora sit eos soluta praesentium, vero in quasi magnam quia rerum cupiditate, repellat molestiae.
+            name: <input type="text">
+        </p>
+       
+    </div>
+
+    <script >
+        $(document).ready(function(){
+            // click event
+            $('#id1').click(function(){
+                $('#id1').css('backgroundColor', 'pink');
+            });
+            // double click
+            $('#id1').dblclick(function(){
+                $('#id1').css('backgroundColor', 'red');
+            });
+
+            // mouseenter
+            $('#id1').mouseenter(function(){
+                $('#id1').css('backgroundColor', 'lightgreen');
+            });
+
+            // mouseleave
+            $('#id1').mouseleave(function(){
+                $('#id1').css('color', 'white');
+            });
+            // contextmenu
+            $('#id1').contextmenu(function(){
+                $('#id1').css('backgroundColor', 'yellow');
+            })
+
+            // keypress
+            $('input').keypress(function(){
+                $('input').css('backgroundColor', 'navy');
+            });
+            
+            // keydown
+            $('input').keydown(function(){
+                $('input').css('backgroundColor', 'black');
+            });
+
+            // keyup
+            $('input').keyup(function(){
+                $('input').css('backgroundColor', 'orange');
+            });
+
+            // window
+            $('body').resize(function(){
+                $('input').css('backgroundColor', 'navy');
+            })
+             
+        });
+    </script>
+</body>
+</html>
