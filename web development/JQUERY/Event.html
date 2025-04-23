@@ -26,10 +26,11 @@
         <h2>jquery Events</h2>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur animi ea debitis dolores quis temporibus veritatis tempora sit eos soluta praesentium, vero in quasi magnam quia rerum cupiditate, repellat molestiae.
-            name: <input type="text">
+            <!-- name: <input type="text"> -->
         </p>
        
     </div>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci necessitatibus et dolorem deleniti, tempora iusto architecto laboriosam voluptate dignissimos sit consequuntur ipsa dolor aliquam repellat nesciunt accusamus doloribus impedit omnis vel? Sed voluptatem hic debitis similique impedit quas sit saepe aut? Laboriosam molestias cum, dignissimos natus unde eveniet vitae id quam sed temporibus? Possimus eos rem doloribus quidem earum omnis, eum consectetur, dolores sequi cum nostrum excepturi repudiandae illum qui illo laboriosam ipsa! Dolorem aspernatur nemo saepe eligendi maiores excepturi ab facilis reprehenderit, quia dolor atque. Autem deleniti doloribus labore cum explicabo ratione modi, molestiae harum vitae. Qui cumque, nesciunt cum illo quidem deserunt aperiam repellat ut sed aliquam recusandae voluptatem accusamus repudiandae provident quam? Sunt reprehenderit doloribus accusantium officia, tempore possimus excepturi sint magnam quas velit. Aperiam possimus pariatur itaque. Laborum quasi nostrum similique quam officia maxime aliquid, reprehenderit ipsa tempora nulla! Veniam, non ducimus. Quasi ullam ipsam totam expedita tempora cum sapiente explicabo excepturi autem nobis ex fugit earum corporis non sint, eligendi quos fugiat labore officiis. A consectetur, odit nam natus nobis esse, minima vel facilis molestias tempore repellendus suscipit ipsam sed debitis placeat maiores! Corrupti itaque doloremque magni dolorem laudantium. Error quis expedita nobis dolores velit illo similique exercitationem quasi accusamus aspernatur, ad, ipsum accusantium quibusdam dignissimos earum, qui libero magni blanditiis harum iusto? Laborum consequatur esse distinctio? Ducimus dolorum cum, molestias esse repellendus praesentium officia nam! Iusto perspiciatis magnam odio cupiditate, eum qui vero similique asperiores recusandae reiciendis soluta, molestias laboriosam quibusdam consequuntur quod libero itaque error! Iusto odit quaerat asperiores a velit id neque illum vitae veritatis! Ipsa repellat recusandae ratione quisquam. Omnis eligendi, suscipit hic ratione repellat accusantium rem tenetur aliquid et culpa eum, optio sed! Perferendis sit corporis minima eius ipsa dolor? Ab consectetur id atque at unde totam magnam, facilis cumque soluta illum repudiandae vero, necessitatibus dolorem dolore optio inventore quam! Molestiae asperiores excepturi non provident et iste repellendus illum sunt saepe! Iure laboriosam fugiat quae, non eius et magnam repellendus aspernatur omnis est dicta dolores soluta tempora doloribus dolor ipsa voluptate ratione consectetur velit recusandae. Illo, consectetur ipsam. Eligendi, sapiente dignissimos quidem optio consequuntur officiis et vel illum alias nostrum illo exercitationem ratione fuga laboriosam iste magni aspernatur quo dolorem esse quae facilis quaerat, repellat a vitae? Ex quod dolorem harum fugit ullam, totam atque eos sed delectus quae accusamus a asperiores nisi eius eveniet voluptatem, nesciunt obcaecati perspiciatis repellendus, minus libero aspernatur ad? Quasi, quidem ullam ut culpa est eaque. Aspernatur culpa voluptates, dolores beatae sint excepturi laboriosam cum tenetur ut assumenda, quisquam libero quo aperiam unde nulla hic id consectetur amet atque. Quia quidem libero similique exercitationem eveniet nihil illo, velit optio obcaecati expedita excepturi est fugiat, ipsam doloremque mollitia suscipit ullam omnis officiis sint quaerat dicta accusamus culpa. Quasi similique optio perspiciatis autem eligendi porro? Tenetur iste quis cumque quasi ea. In placeat itaque error fugiat natus ratione vel eligendi magnam voluptatibus reprehenderit. Dolor et beatae rerum illo doloremque ullam blanditiis voluptatem exercitationem! Eos minus sapiente iure?</p>
 
     <script >
         $(document).ready(function(){
@@ -55,7 +56,7 @@
             $('#id1').contextmenu(function(){
                 $('#id1').css('backgroundColor', 'yellow');
             })
-
+/*
             // keypress
             $('input').keypress(function(){
                 $('input').css('backgroundColor', 'navy');
@@ -70,11 +71,29 @@
             $('input').keyup(function(){
                 $('input').css('backgroundColor', 'orange');
             });
+*/          
+            $('body').keypress(function(){
+                $('body').css('backgroundColor', 'navy');
+            });
+            
+            // keydown
+            $('body').keydown(function(){
+                $('this').css('backgroundColor', 'black');
+            });
+
+            // keyup
+            $('body').keyup(function(){
+                $('this').css('backgroundColor', 'orange');
+            });
 
             // window
-            $('body').resize(function(){
-                $('input').css('backgroundColor', 'navy');
-            })
+            $(window).resize(function(){
+              console.log('data resize');
+            });
+
+            $(window).scroll(function(){
+              console.log('data scroll');
+            });
              
         });
     </script>

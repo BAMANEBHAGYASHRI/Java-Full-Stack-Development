@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <fieldset>
+        <form action="" id="frm">
+            <label for="name">FirstName</label>
+            <input id="id1" type="text" placeholder=" ur First Name" required><br><br>
+    
+            <label for="sname">SurName</label>
+            <input id="id2" type="text" placeholder=" ur surname" required><br><br>
+            
+            <label for="">Select Option</label>
+            <select name="" id="id3">
+                
+                <option value="">A</option>
+                <option value="">B</option>
+                <option value="">C</option>
+                <option value="">D</option>
+            </select> <br><br>
+    
+            <label for="">Email</label>
+            <input type="email"><br><br>
+            <label for="">Password</label>
+            <input type="password"><br><br>
+            <button>Submit</button>
+        </form>
+    </fieldset>
+    
+
+
+    <script>
+        $(document).ready(function(){
+            $('#id1').focus(function(){
+                $('#id1').css('backgroundColor','orange');
+            });
+
+            $('#id2').blur(function(){
+                $('#id2').css({color:'white', backgroundColor: 'lightgreen'});
+            });
+
+            $('#id3').change(function(){
+                $('#id3').css('backgroundColor','pink');
+            });   
+
+
+            $('#id1').select(function(){
+                $('#id1').css('backgroundColor','red');
+            });
+
+            $('#frm').submit(function(){
+                // $('#frm').css({color , 'white' , backgroundColor , 'lightgreen'});
+                alert("your form successfully submitted!!");
+
+            });
+
+            
+        });
+    </script>
+</body>
+</html>
