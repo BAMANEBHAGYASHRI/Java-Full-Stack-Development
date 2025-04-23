@@ -1,7 +1,5 @@
 package objectOrientedExamples;
 
-
-
 class Shapes {
     void draw() {
         System.out.println("We can Draw the shapes");
