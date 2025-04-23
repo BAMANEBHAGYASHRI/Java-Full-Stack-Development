@@ -1,4 +1,6 @@
-package oops.org.example;
+package objectOrientedExamples;
+
+
 
 class Shapes {
     void draw() {
@@ -24,7 +26,7 @@ class Triangle extends Shapes {
     }
 }
 
-public class Assignment2_MethodOverriding {
+public class Main {
     public static void main(String[] args) {
         Shapes[] shapes = new Shapes[3];
         shapes[0] = new Circle();

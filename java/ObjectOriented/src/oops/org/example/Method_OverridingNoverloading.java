@@ -21,6 +21,7 @@ public class Method_OverridingNoverloading {
 		
 		colorprinter cp=new colorprinter();
 		cp.print("bhagyashri");
+//		cp.print(2);
 
 	}
 
