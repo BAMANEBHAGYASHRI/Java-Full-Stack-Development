@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[1,3,7,'bhagyashri'];
+        let arr2=[90,78,363,'shruti'];
+        // using cancat method
+        let arr=arr1.concat(arr2);
+        console.log(arr);
+
+        // using Spread oprteor
+        let arr3=[...arr1,...arr2];
+        console.log(arr3);
+
+
+        let obj={
+            name:'bhagayshri',
+            age:21
+        }
+        let obj1={
+            name:'shruti',
+            age:24
+        }
+
+        let obj2=[...obj,...obj1];
+        console.log(obj2);
+    </script>
+   
+</body>
+</html>
