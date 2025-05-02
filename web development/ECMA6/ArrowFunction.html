@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // without parameter
+        let demo=()=>{
+            // return `this is without parameter arrow function`
+            return  Math.random();
+        }
+        console.log(demo());
+
+
+        // Single Parameter
+            let demo1=(a)=>{
+                return a*5;
+            }
+            console.log(demo1(5));
+            // or
+            let demo2=(b)=>b*25;
+            console.log(demo2(20));
+
+        // double parameter
+        let demo3=(x,y)=>{
+            return x+y;
+        }
+        console.log(demo3(20,80));       
+        
+        
+        // multiple parameters
+        let demo4=(p,q,r,s,t)=>{
+            return p+q-r*s/t;
+        }
+        console.log(demo4(6,9,8,4,3));
+    </script>
+</body>
+</html>
