@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+</head>
+<body>
+    <form action="" id="form">
+        <label for="">FirstName</label>
+        <input type="text" id="id1" placeholder="Enter Name">
+        <br><br>
+        <label for="">LastName</label>
+        <input type="text" id="id2" placeholder="Enter Surname">
+        <br><br>
+        <label for="">Pick a Color</label>
+        <select name="" id="id3">
+            <option value="">red</option>
+            <option value="">yellow</option>
+            <option value="">blue</option>
+            <option value="">pink</option>
+        </select>
+        <br><br>
+        <button>Click</button>
+
+        <script>
+            $(document).ready(function(){
+                $('#id1').focus(function(){
+                    $('#id1').css('backgroundColor','blue');
+                });
+
+                $('#id2').blur(function(){
+                $('#id2').css('backgroundColor','pink');
+                });
+
+                $('#id3').change(function(){
+                $('#id3').css('backgroundColor','red');
+                });
+
+                $('#id1').select(function(){
+                $('#id1').css('backgroundColor','green');
+                });
+
+                $('#form').submit(function(){
+                    alert('Submiited Successfully');
+                })
+            });
+
+
+            
+        </script>
+    </form>
+</body>
+</html>
