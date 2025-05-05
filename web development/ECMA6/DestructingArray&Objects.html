@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Destructing Array And Objects</h1>
+    <script>
+        let arr=[45,23,22,76,88,34 , ['a','b','c','d']];
+        // let a=arr[0];
+        // console.log(a);
+        // let b=arr[1];
+        // console.log(b);
+        // let c=arr[2];
+        // console.log(c);
+        // let d=arr[3];
+        // console.log(d);
+        // let e=arr[4];
+        // console.log(e);
+        // let f=arr[5];
+        // console.log(f);  //before destructing of array
+
+        let[a,b,c,d=11,e,f , g]=arr;
+        console.log(g);
+
+
+        // OBJECT
+
+        let obj={
+            name:'bhagyashri',
+            age:21,
+            city:'sangli',
+
+            obj1:{
+                name1:'shruti',
+                age1:18
+            }
+        }
+       
+        // console.log(obj.name);
+        let{name,age,city:mumbai , obj1:{name1,age1}}=obj;
+        console.log(age1);
+        // console.log(obj.obj1);
+        
+    </script>
+</body>
+</html>
