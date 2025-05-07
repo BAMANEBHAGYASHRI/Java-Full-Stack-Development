@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+    h1{
+        text-align: center;
+        color: lightseagreen;
+    }
+    #id1{
+        border: 1px solid black;
+        width: 300px;
+        height: 300px;
+        padding: 20px;
+        margin: 10px;
+        background-color: blue;
+    }
+    h2{
+        text-align: center;
+    }
+    </style>
+</head>
+<body>
+    <h1>Jquery Effects</h1>
+    <div id="id1">
+        <img src="../img-2.jpeg" alt="img">
+        <h2>Effects</h2>
+    </div>
+    <br><br>
+
+    <button id="btn1">Hide</button>
+    <button id="btn2">Show</button>
+    <button id="btn3">Toggle</button>
+    <button id="btn4">FadeIn</button>
+    <button id="btn5">fadeOut</button>
+    <button id="btn6">fadeToggle</button>
+    <button id="btn7">fadeTo</button>
+    <button id="btn8">slideup</button>
+    <button id="btn9">slideDown</button>
+    <button id="btn10">slideToggle</button>
+    <button id="btn11">cssStyle</button>
+
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                // hide
+                $('#id1').hide(function(){
+                    alert("container is hide");
+                });
+                // show
+                $('#btn2').click(function(){
+                    $('#id1').show(function(){
+                        
+                    })
+                });
+                // toggle
+                $('#btn3').click(function(){
+                    $('#id1').toggle(function(){})
+                });
+
+                // fadeIn
+                $('#btn4').click(function(){
+                    $('#id1').fadeIn(function(){
+                        console.log("fade in");
+                    })
+                });
+                
+                // fadeOut
+                $('#btn5').click(function(){
+                    $('#id1').fadeOut(function(){
+                        
+                    })
+                });
+
+                
+                // fadeToggle
+                $('#btn6').click(function(){
+                    $('#id1').fadeToggle(function(){
+                        
+                    })
+                });
+
+                
+                // fadeTo
+                $('#btn7').click(function(){
+                    $('#id1').fadeTo(3000 , 0.8,function(){    
+                    })
+                });
+
+                
+                // SlideUP
+                $('#btn8').click(function(){
+                    $('#id1').slideUp(3000,function(){
+                        
+                    })
+                });
+
+                                
+                // SlideUP
+                $('#btn9').click(function(){
+                    $('#id1').slideDown( 2000,function(){
+                        
+                    })
+                });
+
+                // SlideToggle
+                $('#btn10').click(function(){
+                    $('#id1').slideToggle( 4000,function(){
+                        
+                    })
+                });
+
+                // cssStyle
+                $('#btn11').click(function(){
+                    $('#id1').css({backgroundColor:'yellow' , color:'white'});
+                });
+
+            });
+
+            
+        });
+    </script>
+</body>
+</html>
