@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Promise</h1>
+    <script>
+        function hello(a){
+            return new Promise(function(reslove,reject){
+                console.log("Promise pending");
+                setTimeout(()=>{
+                if(a){
+                    reslove('your promise is resolved');
+                }
+                else{
+                    reject('your promise is rejected');
+                }
+                
+                },5000);
+                
+            });
+        }
+        // promises chaining
+        // let passed=(data)=>{
+        //     console.log(data);
+        // }
+        // let failed = (error)=>{
+        //     console.log(error);
+        // }
+
+        // or
+        hello(false).then((data)=>{
+            console.log(data);
+        }).catch((error)=>{
+            console.log(error);
+        });
+
+        // promise chaining
+        // hello(false).then(passed).catch(failed);
+        // console.log(hello((true)));
+        // console.log(hello((false)));
+    </script>
+</body>
+</html>
