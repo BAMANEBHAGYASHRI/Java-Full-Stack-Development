@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        h1{
+            text-align: center;
+            color: chartreuse;
+        }
+        #id1{
+            border: 1px solid black;
+            width: 350px;
+            height: 400px;
+            margin: 10px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        h2{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <h1>append and prepaend methods</h1>
+    <div id="id1">
+        <h2>Append and Prepend Methods</h2>
+    </div> <br><br>
+
+    <button id="btn1">append</button>
+    <button id="btn2">prepend</button>
+    <button id="btn3">appendTo</button>
+    <button id="btn4">prependTo</button>
+    <button id="btn5">after</button>
+    <button id="btn6">before</button>
+    <button id="btn7">empty</button>
+    <button id="btn8">remove</button>
+
+
+
+    <script>
+        $(document).ready(function(){
+            $('#btn1').click(function(){
+                $('#id1').append('<h3>Append Method:</h3>')
+            });
+
+            $('#btn2').click(function(){
+                $('#id1').prepend('<h3>prepend Method:</h3>')
+            });
+
+            $('#btn3').click(function(){
+                $('<h3>Append To Method:</h3>').appendTo('#id1')
+            });
+
+            $('#btn4').click(function(){
+                $('<h3>prepend To Method:</h3>').prependTo('#id1')
+            });
+
+            $('#btn5').click(function(){
+                $('#id1').after('<img src="../img-2.jpeg" alt="no img">')
+            });
+            $('#btn6').click(function(){
+                $('#id1').before('<h3>before Method:</h3>')
+            });
+
+            $('#btn7').click(function(){
+                $('#id1').empty('<h3>after Method:</h3>')
+            });
+
+            $('#btn8').click(function(){
+                $('#id1').remove()
+            });
+        });
+    </script>
+</body>
+</html>
